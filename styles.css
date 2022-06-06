@@ -266,6 +266,19 @@ body {
     margin-bottom: 20px;
 }
 
-.additional-info__languages-item {
+.additional-info__languages-level {
     color: var(--secondary-text-color);
+}
+
+.additional-info__languages-name {
+    color: var(--primary-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.additional-info__languages-comment {
+color: var(--durability-text-color);
+text-align: left;
+margin-bottom: 10px;
+font-size: 15px;
 }
