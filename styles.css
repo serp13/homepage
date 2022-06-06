@@ -9,13 +9,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    background: rgb(227, 237, 240);
 
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #0ebf2c45;
+    --text-decoration-color: #07880d;
 }
 
 .container {
@@ -266,6 +267,19 @@ body {
     margin-bottom: 20px;
 }
 
-.additional-info__languages-item {
+.additional-info__languages-level {
     color: var(--secondary-text-color);
+}
+
+.additional-info__languages-name {
+    color: var(--primary-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.additional-info__languages-comment {
+color: var(--durability-text-color);
+text-align: left;
+margin-bottom: 10px;
+font-size: 15px;
 }
