@@ -1,10 +1,224 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    
+    <main>
+      <div class="resume">
+        <div class="container">
+          <div class="resume__block">
+            <h1 class="contact-info__header">Serhii Prokop</h1>
+            <h3 class="contact-info__sub-header">QA student candidate at BSA</h3>
+    
+            <div class="contact_info_container fh">
+              <div class="contact-info__block">
+
+                <a href="" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z"/>
+                    </svg>
+                  </div>
+                  <span><p title="... but I prefer the hexadecimal system, because then I'm only 31 years old =)))">I'm 110001 years old ;)</p></span>
+                </a>
+              <a href="" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M352 111.1c22.09 0 40-17.88 40-39.97S352 0 352 0s-40 49.91-40 72S329.9 111.1 352 111.1zM224 111.1c22.09 0 40-17.88 40-39.97S224 0 224 0S184 49.91 184 72S201.9 111.1 224 111.1zM383.1 223.1L384 160c0-8.836-7.164-16-16-16h-32C327.2 144 320 151.2 320 160v64h-64V160c0-8.836-7.164-16-16-16h-32C199.2 144 192 151.2 192 160v64H128V160c0-8.836-7.164-16-16-16h-32C71.16 144 64 151.2 64 160v63.97c-35.35 0-64 28.65-64 63.1v68.7c9.814 6.102 21.39 11.33 32 11.33c20.64 0 45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C114.1 348.3 139.4 367.1 160 367.1s45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C242.1 348.3 267.4 367.1 288 367.1s45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C370.1 348.3 395.4 367.1 416 367.1c10.61 0 22.19-5.227 32-11.33V287.1C448 252.6 419.3 223.1 383.1 223.1zM352 373.3c-13.75 10.95-38.03 26.66-64 26.66s-50.25-15.7-64-26.66c-13.75 10.95-38.03 26.66-64 26.66s-50.25-15.7-64-26.66c-13.75 10.95-38.03 26.66-64 26.66c-11.27 0-22.09-3.121-32-7.377v87.38C0 497.7 14.33 512 32 512h384c17.67 0 32-14.33 32-32v-87.38c-9.91 4.256-20.73 7.377-32 7.377C390 399.1 365.8 384.3 352 373.3zM96 111.1c22.09 0 40-17.88 40-39.97S96 0 96 0S56 49.91 56 72S73.91 111.1 96 111.1z"/>
+                  </svg>
+                </div>
+                <span>May 11</span>
+              </a>
+              <a href="" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/>
+                  </svg>
+                </div>
+                <span>Odesa</span>
+              </a>
+            </div>
+            
+              <div class="contact-info__block contact-info__block--center">
+                <img class="contact-info__avatar" id="serp13" src="assets/serp13.jpg" alt="Avatar">               
+              </div>
+
+              <script>
+                serp13.onclick = function() {
+                  let start = Date.now();
+            
+                  let timer = setInterval(function() {
+                    let timePassed = Date.now() - start;
+            
+                    serp13.style.left = timePassed / 5 + 'px';
+
+                    if (timePassed > 500) serp13.style.left = 100 - (timePassed - 500) / 5 + 'px';
+                    if (timePassed > 1000) serp13.style.left = -(timePassed - 1000) / 5 + 'px';
+                    if (timePassed > 1500) serp13.style.left = -100 + (timePassed - 1500)  / 5 + 'px';            
+                    if (timePassed > 2000) clearInterval(timer);
+            
+                  }, 20);
+                }
+              </script>
+    
+              <div class="contact-info__block">
+                <a href="" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/>
+                    </svg>
+                  </div>
+                  <span>serhii13.prokop@gmail.com</span>
+                </a>
+                <a href="" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M304 0h-224c-35.35 0-64 28.65-64 64v384c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64V64C368 28.65 339.3 0 304 0zM192 480c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S209.8 480 192 480zM304 64v320h-224V64H304z"/></svg>
+                  </div>
+                  <span>+380 94 9463090</span>
+                </a>
+                <a href="https://t.me/serhii13serp" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                      <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/>
+                    </svg>
+                  </div>
+                  <span>@serhii13serp</span>
+                </a>
+              </div>
+
+            </div>          
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                  </path>
+                </svg>
+              </div>
+              <p class="intro_text">I'm learning the specifics of QA. 
+                I like being able to help fix bugs and improve projects. 
+                I want to learn the modern tools that QA professionals use.
+              </p>
+            </div>
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                  </path>
+                </svg>
+              </div>
+              <p class="intro_text">My dream is to get back into real IT from old-fashioned management. 
+                I want to start with QA, then AQA. 
+                And may my background help me with that.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="skills">
+              <h3 class="skills__header">Skills</h3>
+              <p class="skills__text">Test cases, bug report (excel, jira), Postman (basics), jmeter (basics), Chrome DevTools (basics), 
+                <br>Kanban, <br>html, CSS (basics), <br>Delphi 7, SQL, Java (basics)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="main-info fh">
+        
+              <div class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability">09.2001 - present</span>
+                    <h3 class="experiences__company-header-name">Telecommunication company</h3>
+                  </div>
+              
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role">Head of Information Department</span>
+                    <h3 class="experiences__company-project-name">Billing project</h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>support the billing system</li>
+                      <li>allocation of available resources</li>
+                      <li>control of execution and acceptance of completed work</li>
+                      <li>collection and processing of requests</li>
+                      <li>priority of the billing system tasks</li>
+                      <li>integration of the billing system and MEDoc</li>
+                      <li>support for the "Call Tariffing" module</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability">07.1997 – 04.2001</span>
+                    <h3 class="experiences__company-header-name">Ukrainian Research Institute <br>of Radio and Television</h3>
+                  </div>
+              
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role">Programmer</span>
+                    <h3 class="experiences__company-project-name">Frequency planning project</h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      Development of a software package:
+                      <li>frequency planning of the radio broadcasting service</li>
+                      <li>design of electromagnetic compatibility of radioelectronic means</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+        
+              <div class="additional-info fv">
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-header">Education</h3>
+                  <div class="additional-info__education-university">
+                    <span class="additional-info__education-university-durability">1990 - 1995</span>
+                    <p class="additional-info__education-university-name">Odessa State University</p>
+                    <h3 class="additional-info__education-university-speciality">Mathematic</h3>                    
+                  </div>
+                </div>
+                
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-header">Courses</h3>
+                  <div class="additional-info__education-university"></div>
+                    <span class="additional-info__education-university-durability">2021</span>
+                    <p class="additional-info__education-university-name">Hillel</p>
+                    <h3 class="additional-info__education-university-speciality">Manual QA (base)</h3>
+                  </div>                
+                
+                <div class="additional-info__languages">
+                  <h3 class="additional-info__languages-header">Languages</h3>
+                  <p class="additional-info__languages-level">A2 pre-intermediate *</p>
+                  <h3 class="additional-info__languages-name">English</h3>
+                  <p class="additional-info__languages-comment">* I know it's not very good for IT. 
+                    That is why I am currently starting a B1 course.</p>
+                                   
+                  </p>
+                </div>              
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>    
   </body>
 </html>
