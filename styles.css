@@ -9,7 +9,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    background: rgb(227, 237, 240);
+    background: #d7d7f0;
 
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
@@ -283,3 +283,8 @@ text-align: left;
 margin-bottom: 10px;
 font-size: 15px;
 }
+
+#serp13 {
+    position: relative;
+    cursor: pointer;
+  }
